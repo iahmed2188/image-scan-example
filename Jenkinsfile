@@ -9,7 +9,7 @@ pipeline {
         BUILD_DIR = '.'
         CONTAINER_REPO = 'iahmed2188/image-scan-example'
         CONTAINER_TAG = "${BUILD_NUMBER}"
-        FALCON_CLOUD_REGION = 'us-2'
+        FALCON_CLOUD_REGION = 'us-1'
     }
     
     stages {

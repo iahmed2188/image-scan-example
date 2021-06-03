@@ -35,7 +35,7 @@ pipeline {
         stage('PushImage') {
             // Push the container image
             steps{
-                withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId:'dockerhub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
+                withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId:'DockerHub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
                 sh '''
                 docker login -u $USERNAME -p $PASSWORD
                 docker push $CONTAINER_REPO:$CONTAINER_TAG

@@ -10,7 +10,7 @@ pipeline {
         CONTAINER_REPO = 'iahmed2188/image-scan-example'
         CONTAINER_TAG = "${BUILD_NUMBER}"
         FALCON_CLOUD_REGION = 'us-1'
-        SCORE = 3000
+        SCORE = 4000
     }
     
     stages {
